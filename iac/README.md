@@ -17,3 +17,9 @@ az deployment group create \
     workload=${WORKLOAD} \
     location=${LOCATION}
 ```
+
+### ARMテンプレートファイルの生成
+
+```bash
+az bicep build --file ./iac/main.bicep --outfile ./iac/main.json
+```
