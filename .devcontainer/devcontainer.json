@@ -20,6 +20,7 @@
 
   // Use 'postCreateCommand' to run commands after the container is created.
   // "postCreateCommand": "uname -a",
+  "onCreateCommand": "bash .devcontainer/scripts/onCreateCommand.sh",
 
   // Configure tool-specific properties.
   "customizations": {
