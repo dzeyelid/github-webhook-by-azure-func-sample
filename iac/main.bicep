@@ -1,7 +1,7 @@
 @description('リソースを識別する文字列を入力してください')
 param workload string
 
-@description('リソースをデプロイするリージョンを指定します。リソースグループと同じロケーションを利用する場合は、デフォルトの文字列"resourceGroup().location"を指定してください。')
+@description('リソースをデプロイするリージョンを指定します。リソースグループと同じロケーションを利用する場合は、デフォルトの文字列"[resourceGroup().location]"を指定してください。')
 param location string = resourceGroup().location
 
 @description('ストレージアカウントのSKUを選択してください')
