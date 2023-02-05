@@ -6,4 +6,5 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > mic
   && sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-$(lsb_release -cs)-prod $(lsb_release -cs) main" > /etc/apt/sources.list.d/dotnetdev.list' \
   && apt-get update && export DEBIAN_FRONTEND=noninteractive \
   && apt-get -y install --no-install-recommends \
-    azure-functions-core-tools-4
+    azure-functions-core-tools-4 \
+  && apt-get clean -y && rm -rf /var/lib/apt/lists/*
