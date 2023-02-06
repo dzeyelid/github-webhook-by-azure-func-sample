@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "functions"
+    },
+    {
+      "name": "[Repository root]",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "debug.internalConsoleOptions": "neverOpen"
+  }
+}
