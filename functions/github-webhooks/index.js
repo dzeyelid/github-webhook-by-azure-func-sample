@@ -3,7 +3,7 @@ const { createHmac } = require('crypto')
 module.exports = async function (context, req) {
   context.log('JavaScript HTTP trigger function processed a request.')
 
-  // Verify secret with x-hub-signature-256 header
+  // Verify the sent body with x-hub-signature-256 header
   const signature = req.headers['x-hub-signature-256'].replace('sha256=', '')
 
   const hmac = createHmac('sha256', `${process.env.GITHUB_WEBHOOKS_SECRET}`)
